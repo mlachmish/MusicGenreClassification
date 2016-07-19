@@ -61,7 +61,7 @@ I had tried several window size and stride values, the best result I got was for
 
 One more point was that Tao’s paper used MFCC features (step 5) while Sander used strait mel-frequencies (step 2).
 
-<Pic 1>
+[Music genre popularity!](assets/music_popularity.png)
 
 I tried both approaches and found out that I got extremely better results using just the mel-frequencies, but the trade-off was the training time of-course.
 Before continue to building a network I wanted to visualise the preprocessed data set, I implemented this through the t-SNE[10] algorithm.Below you can see the t-SNE graph for MFCC (step 5) and Mel-Frequencies (step 2):
