@@ -1,0 +1,10 @@
+setup.py
+lib/api_settings.py
+lib/oauth7digital.py
+lib/py7D.py
+lib/py7D.egg-info/PKG-INFO
+lib/py7D.egg-info/SOURCES.txt
+lib/py7D.egg-info/dependency_links.txt
+lib/py7D.egg-info/requires.txt
+lib/py7D.egg-info/top_level.txt
+lib/py7D.egg-info/zip-safe

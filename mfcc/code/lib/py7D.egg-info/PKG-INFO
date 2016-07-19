@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: py7D
+Version: 0.2
+Summary: A lightweight python interface to 7Digital web service
+Home-page: git://github.com/jasonrubenstein/python-7Digital.git
+Author: Jason Rubenstein
+Author-email: jasondrubenstein@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: 7Digital,py7D
+Platform: UNKNOWN
