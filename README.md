@@ -98,6 +98,7 @@ I did looked for benchmarks outside the deep learning field and I found a paper 
 
 ## Code
 
+### Documentation
 
 • previewDownloader.py: 
 USAGE: python previewDownloader.py [path to MSD data] 
@@ -115,6 +116,15 @@ Moreover, the script output a t-SNE graph at the end.
 • train.py: 
 USAGE: python train.py 
 This script builds the neural network and feeds it with ‘data’ and ‘labels’.  When it is done it will save ‘model.final’.
+
+### Complete Installation
+
+<ul>
+<li>Download the dataset files from https://www.dropbox.com/sh/ndqy1wv5k6fnndg/AAC4tUJzQwXsQl5wnZVqg9Tba?dl=0.</li>
+<li>Unzip file</li>
+<li>Place dataset files in the structure they are ordered in</li>
+</ul>
+
 
 ## References
 
