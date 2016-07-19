@@ -1,0 +1,1 @@
+https://github.com/jasonrubenstein/python_oauth2/archive/1.5.1.212.tar.gz#egg=oauth2-1.5.1.212
