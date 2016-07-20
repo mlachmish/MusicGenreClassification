@@ -170,7 +170,7 @@ Wurst, A BENCHMARK DATASET FOR AUDIO CLASSIFICATION AND CLUSTERING, University o
 
 ## Author
 
-Matan Lachmish (The Big Fat Ninja),
+Matan Lachmish <sub>a.k.a</sub> The Big Fat Ninja,<br>
 https://thebigfatninja.xyz
 
 ## License
