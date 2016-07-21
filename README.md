@@ -1,3 +1,8 @@
+<p align="center">
+<img src="assets/MusicGenreClassification.png?raw=true" alt="MusicGenreClassification" width="250">
+</p>
+
+
 # MusicGenreClassification
 
 ##Abstract
