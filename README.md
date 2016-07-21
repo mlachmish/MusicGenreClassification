@@ -1,5 +1,5 @@
 <p align="center">
-<img src="assets/MusicGenreClassification.png?raw=true" alt="MusicGenreClassification" width="250">
+<img src="assets/musicGenereClassification.png?raw=true" alt="MusicGenreClassification" width="250">
 </p>
 
 
