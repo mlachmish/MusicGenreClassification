@@ -48,8 +48,8 @@ if __name__ == "__main__":
 
                                 url = py7D.preview_url(id7Digital)
                                 urlretrieve = urllib.urlretrieve(url, previewFilePath)
-                            except Exception:
-                                print "Error accured"
+                            except Exception as e:
+                                print "Error accured: " + str(e)
 
                         if file.endswith('h5'):
                             # update_progress(int(i/7620 * 100))
