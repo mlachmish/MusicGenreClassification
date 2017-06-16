@@ -150,7 +150,7 @@ This script builds the neural network and feeds it with ‘data’ and ‘labels
 ### Complete Installation
 
 <ul>
-<li>Download the dataset files from https://www.dropbox.com/sh/ndqy1wv5k6fnndg/AAC4tUJzQwXsQl5wnZVqg9Tba?dl=0.</li>
+<li>Download the dataset files from https://www.dropbox.com/s/8ohx6m23co1qaz3/DataSet.zip?dl=0.</li>
 <li>Unzip file</li>
 <li>Place dataset files in the structure they are ordered in</li>
 </ul>
