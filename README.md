@@ -7,33 +7,19 @@
 
 Academic research in the field of **Deep Learning (Deep Neural Networks) and Sound Processing**, Tel Aviv University.
 
-##Abstract
+## Abstract
 
 This paper discuss the task of classifying the music genre of a sound sample.
 
 ## Introduction
 
-When I decided to work on the field of sound processing I thought that genre classification is the parallel problem to the image classification we had learned in class. To my surprise I did not found to many works in deep learning that tackled this exact problem.
-One paper that did tackle this classification problem is Tao Feng’s paper [1] from the university of Illinois. I did learned a lot from this paper, but honestly, they didn't
- 
-Music Genre Classification Deep Learning  2
-reached impressive results (as Ill explain later).  
-So I had to look on other, related but not exact papers.
-A very influential paper was Deep content-based music recommendation
-[2] This paper is about content-base music recommendation using deep learning techniques. The way they got the dataset, and the preprocessing they had done to the sound had really enlightened my implementation.
-Also, this paper was mentioned lately on “Spotify” blog [3]. Spotify recruited a deep learning intern that based on the above work implemented a music recommenda- tion engine. His simple yet very efficient network made me think that Tao’s RBM was not the best approach and there for my implementation included a CNN instead like in the Spotify blog.
-One very important note is that Tao’s work published result only for 2,3 and 4 classes classification. Obviously he got really good result for 2 classes classification, but the more classes he tried to classify the poorer the result he got. My work classify the whole 10 classes challenge, a much more difficult task.
-A sub task for this project was to learn a new SDK for deep learning, I have been waiting for an opportunity to learn Google’s new TensorFlow[4]. This project is imple- mented in Python and the Machine Learning part is using TensorFlow.
+When I decided to work on the field of sound processing I thought that genre classification is a parallel problem to the image classification. To my surprise I did not found too many works in deep learning that tackled this exact problem. One paper that did tackle this classification problem is Tao Feng’s paper [1] from the university of Illinois. I did learned a lot from this paper, but honestly, they results the paper presented were not impressive.
+
+So I had to look on other, related but not exact papers. A very influential paper was Deep content-based music recommendation [2] This paper is about content-base music recommendation using deep learning techniques. The way they got the dataset, and the preprocessing they had done to the sound had really enlightened my implementation. Also, this paper was mentioned lately on “Spotify” blog [3]. Spotify recruited a deep learning intern that based on the above work implemented a music recommendation engine. His simple yet very efficient network made me think that Tao’s RBM was not the best approach and there for my implementation included a CNN instead like in the Spotify blog. One very important note is that Tao’s work published result only for 2,3 and 4 classes classification. Obviously he got really good result for 2 classes classification, but the more classes he tried to classify the poorer the result he got. My work classify the whole 10 classes challenge, a much more difficult task. A sub task for this project was to learn a new SDK for deep learning, I have been waiting for an opportunity to learn Google’s new TensorFlow[4]. This project is implemented in Python and the Machine Learning part is using TensorFlow.
 
 ## The Dataset
 
-Getting the dataset might be the most time consuming part of this work. 
-Working with music is a big pain, every file is couple of MBs, there are variety of quali- ties and parameters of recording (Number of frequencies, Bits per second, etc...). But the worst issue is copyright, there are no legit famous songs dataset as they would cost money.
-Tao’s paper based on a dataset called GTZAN[5]. This dataset is quit small (100 songs per genre X 10 genres = overall 1,000 songs), and the copyright permission is questionable. This is from my perspective one of the reasons that held him from getting better results.
-So, I looked up for generating more data to learn from. Eventually I found MSD[6] dataset (Million Song Dataset). 
-It is a freely-available collection of audio features and metadata for a million contempo- rary popular music tracks. Around 280 GB of pure metadata. There is a project on top of MSD called tagtraum[7] which classify MSD songs into genres.
-The problem now was to get the sound itself, here is where I got a little creative. I found that one of the tags every song have in the dataset is an id from a provider called 7Digital[8]. 7Digital is a SaaS provider for music application, it basically let you stream music for money. I signed up to 7Digital as a developer and after their approval i could access their API. Still any song stream costs money, But I found out that they are en- abling to preview random 30 seconds of a song to the user before paying for them. This is more than enough for my deep learning task, So I wrote “previewDownloader.py” that downloads for every song in the MSD dataset a 30 sec preview.
-Unfortunately I had only my laptop for this mission, so I had to settle with only 1% of the dataset (around 2.8GB).
+Getting the dataset might be the most time consuming part of this work. Working with music is a big pain, every file is usually a couple of MBs, there are variety of qualities and parameters of recording (Number of frequencies, Bits per second, etc…). But the biggest pain is copyrighting, there are no legit famous songs dataset as they would cost money. Tao’s paper based on a dataset called GTZAN[5]. This dataset is quit small (100 songs per genre X 10 genres = overall 1,000 songs), and the copyright permission is questionable. This is from my perspective one of the reasons that held him from getting better results. So, I looked up for generating more data to learn from. Eventually I found MSD[6] dataset (Million Song Dataset). It is a freely-available collection of audio features and metadata for a million contemporary popular music tracks. Around 280 GB of pure metadata. There is a project on top of MSD called tagtraum[7] which classify MSD songs into genres. The problem now was to get the sound itself, here is where I got a little creative. I found that one of the tags every song have in the dataset is an id from a provider called 7Digital[8]. 7Digital is a SaaS provider for music application, it basically let you stream music for money. I signed up to 7Digital as a developer and after their approval i could access their API. Still any song stream costs money, But I found out that they are enabling to preview random 30 seconds of a song to the user before paying for them. This is more than enough for my deep learning task, So I wrote “previewDownloader.py” that downloads for every song in the MSD dataset a 30 sec preview. Unfortunately I had only my laptop for this mission, so I had to settle with only 1% of the dataset (around 2.8GB).
 
 
 The genres I am classifying are:
