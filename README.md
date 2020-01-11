@@ -76,7 +76,7 @@ Before continue to building a network I wanted to visualise the preprocessed dat
  
 ## The Graph
  
- After seeing the results Tao and Sander reached I decided to go with a convolu- tional neural network implementation. The network receive a 599 vector of mea-frequen- cy beans, each containing 128 frequencies which describe their window. The network consist with 3 hidden layers and between them I am doing a max pooling. Finally a fully connected layer and than softmax to end up with a 10 dimensional vector for our ten genre classes
+ After seeing the results Tao and Sander reached I decided to go with a convolutional neural network implementation. The network receive a 599 vector of mea-frequency beans, each containing 128 frequencies which describe their window. The network consist with 3 hidden layers and between them I am doing a max pooling. Finally a fully connected layer and than softmax to end up with a 10 dimensional vector for our ten genre classes
  
 <p align="center">
 <img src="assets/nural_network.png?raw=true" alt="Nural Network" width="500">
@@ -98,7 +98,7 @@ Before continue to building a network I wanted to visualise the preprocessed dat
 
 ## Results
 
-As I explained in the introduction, the papers I based my work on did not solve the exact problem I did, for example Tao’s paper published results for classifying 2,3 and 4 classes (Genres). 
+As I explained in the introduction, the papers I based my work on did not solve the exact problem I did, for example Tao’s paper published results for classifying 2, 3 and 4 classes (Genres). 
 <p align="center">
 <img src="assets/results_feng.png?raw=true" alt="Tao Feng's results" width="750">
 </p>
